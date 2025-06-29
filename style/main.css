@@ -1,0 +1,291 @@
+/* Outfit */
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+}
+
+:root {
+    --yellow: #fcd978;
+    --main-orange: #f29c52;
+    --main-brown: #492d13;
+    --link-color: #493d13;
+    --home-bg-color: #fff5ed;
+}
+
+/* Start Navbar */
+a {
+    color: var(--main-brown) !important
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+/* nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111111111111;
+} */
+
+.main-nav {
+    /* background-color: #fff5ed; */
+    background-color: white;
+}
+
+.my-btn {
+    background-color: var(--main-orange);
+    padding: 8px 27px;
+    border-radius: 40px;
+    position: relative;
+    top: -1px;
+    transition: .5s;
+    color: var(--link-color);
+    border: none;
+    font-weight: 600;
+}
+
+.my-btn:hover {
+    background-color: var(--main-brown);
+    color: white;
+}
+
+.my-btn:hover a {
+    color: white !important;
+    transition: .5s;
+}
+
+.my-btn:active {
+    background-color: #a17853;
+}
+
+.my-btn:focus {
+    box-shadow: none;
+}
+
+.cart-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(73, 45, 19, 0.15);
+    background: var(--main-orange, #f29c52);
+    /* default background */
+    transition: 0.5s;
+}
+
+.cart-icon:hover,
+.cart-icon:focus {
+    background: var(--main-brown);
+    color: white;
+}
+
+.nav-link {
+    font-weight: 550;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--main-orange) !important;
+    transition: .5s;
+}
+
+.navbar-brand {
+    margin-top: -10px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+.navbar-brand span:first-child {
+    color: var(--main-brown);
+}
+
+.navbar-brand span:last-child {
+    color: var(--main-orange);
+}
+
+/* End Navbar */
+
+/* Start Slider Section */
+.slider {
+    /* background-color: var(--home-bg-color); */
+    width: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+    /* Fill parent height */
+    background-size: cover;
+    /* Make background image cover the area */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent tiling */
+}
+
+.carousel-1 {
+    background-image: url(images/Slider-images/Slider-1.png);
+    background-position: bottom;
+}
+
+.carousel-2 {
+    background-image: url(images/Slider-images/Slider-2.png);
+
+}
+
+.carousel-3 {
+    background-image: url(images/Slider-images/Slider-3.png);
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    /* background: color-mix(in srgb, #383838, transparent 15%); */
+    /* backdrop-filter: blur(5px); */
+    top: 0;
+    left: 0;
+    /* opacity: 0.5; */
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+    right: auto;
+    text-align: center;
+    /* backdrop-filter: blur(2px); */
+}
+
+.carousel-caption h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: none;
+}
+
+/* End Slider Section */
+
+/* Start Cards Section */
+.section-head {
+    color: var(--main-brown);
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.main-container {
+    background-color: var(--home-bg-color);
+    background-image: url(images/hero-bg-pattern.png);
+    object-fit: cover;
+}
+
+.card .card-image {
+    width: 170px;
+    height: 170px;
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-container {
+    padding: 10px;
+    /* background-color: red; */
+}
+
+.inner-card {
+    padding: 20px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* or space-between */
+    align-items: center;
+
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(73, 45, 19, .04);
+    transition: .5s;
+}
+
+.card-details {
+    flex-grow: 1;
+    /* This will take up all available space */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cart-btn {
+    margin-top: auto;
+    /* Pushes the button to the bottom */
+}
+
+.card-details p {
+    font-weight: 550;
+}
+
+.card-details .card-name {
+    font-size: 1.2rem;
+    color: var(--main-brown);
+}
+
+/* End Cards Section */
+
+/* Start Cart Drawer */
+.cart-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-drawer.open {
+    transform: translateX(0);
+}
+
+#cartItems img {
+    width: 50px;
+}
+
+/* End Cart Drawer */
