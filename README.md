@@ -1,2 +1,2 @@
 # Bakery Shop Template
-### Static website built using html, css, bootstrap 4
+### Static responsive website built using html, css, bootstrap 4
